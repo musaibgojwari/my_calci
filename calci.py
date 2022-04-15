@@ -30,16 +30,6 @@ class Calculator():
         self.window.geometry("375x667")
         self.window.title("Calculator")
 
-
-
-        self.options = ["Basic Calculator","Scientific Calculator"]
-        self.clicked = tk.StringVar()
-
-        self.clicked.tk.set("Basic Calculator")
-
-        drop = tk.OptionMenu(self.window,self.clicked,*self.options)
-        drop.pack()
-
         #calling functions
         self.display_frame = self.create_display_frame()
         self.buttons_frame = self.create_buttons_frame()
